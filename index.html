@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 </head>
+
 <body>
     <div class="container">
+
+        <!-- MENÚ-->
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
+
+        <!-- HEADER -->
         <header>
             <div class="img-wrapper">
                 <img src="imgs/bg.jpg" alt="">
@@ -23,6 +35,28 @@
                 <button>Saiba Mais</button>
             </div>
         </header>
+
+        <!-- MENÚ LATERAL -->
+        <div class="sidebar">
+            <!-- CONTEÚDO -->
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Orçamentos</a></li>
+                </ul>
+            </nav>
+            <!-- REDES SOCIAIS -->
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>
