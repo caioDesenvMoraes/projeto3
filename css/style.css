@@ -15,6 +15,7 @@
     --font-action: "Muli", serif;
 }
 
+
 /***** MENÚ HAMBURGUER *****/
 .hamburguer {
     width: 2rem;
@@ -81,6 +82,7 @@
 .show-menu .hamburguer:hover span {
     opacity: 1;
 }
+
 
 /***** HEADER *****/
 header {
@@ -173,6 +175,7 @@ header {
     opacity: 0.8;
 }
 
+
 /***** MENÚ LATERAL *****/
 .sidebar {
     width: 20rem;
@@ -182,6 +185,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 10;
 }
 
 .show-menu .sidebar {
@@ -236,18 +240,19 @@ header {
     background-color: #a044ff;
 }
 
+
 /***** SEÇÃO CONHECIMENTO *****/
-.sessao-conhecimentos {
+.secao-conhecimentos {
     background-color: #f5f5f5;
 }
 
-.sessao-header {
+.secao-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sessao-header h1 {
+.secao-header h1 {
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #4b4b4b;
@@ -334,6 +339,7 @@ header {
     width: 100%;
 }
 
+
 /***** SEÇÃO PROJETOS *****/
 .projetos {
     display: flex;
@@ -404,9 +410,7 @@ header {
     padding-bottom: 2rem;
 }
 
-.card-info button {
-    width: 8rem;
-    height: 2.5rem;
+.btn {
     background: #6a3093;
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
     background: linear-gradient(to right, #a044ff, #6a3093);
@@ -417,3 +421,94 @@ header {
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
 }
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+}
+
+
+/***** SEÇÃO CONTATO *****/
+.secao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #9e9e9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contato {
+    width: 20rem;
+    height: 20rem;
+    background-color: #eee;
+    padding: 1rem 3rem 7rem 3rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .5);
+}
+
+.contato h1 {
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+}
+
+.contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    max-width: 20rem;
+    max-height: 3rem;
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transform: all .3s;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.field:focus ~ label {
+    top: 0;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
