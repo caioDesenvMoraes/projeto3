@@ -1,5 +1,5 @@
-# projeto3
-Meu Terceiro Projeto
+# Portifólio
+Meu Portifólio de Projetos
 
 ## Tarefas
 O controle das tarefas desse projeto será realizado no GitHub
@@ -10,4 +10,3 @@ O controle das tarefas desse projeto será realizado no GitHub
 - :up: Atualização
 - :bug: Correção de Bug
 - :checkered_flag: Release
-
